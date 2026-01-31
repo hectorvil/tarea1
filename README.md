@@ -12,7 +12,7 @@ El enfoque principal utiliza un modelo en **dos etapas**: primero estima si habr
 
 ## Estructura del repositorio
 
-### Notebook 1 — `01_eda_entendimiento.ipynb`
+### Notebook 1 — `entendimientoEDA.ipynb`
 Exploración y entendimiento del problema:
 - Tamaño del dataset, tipos de variables y revisión de nulos
 - Distribuciones de `item_price` y `item_cnt_day` (incluyendo devoluciones)
@@ -21,7 +21,7 @@ Exploración y entendimiento del problema:
 - Intermitencia y “series muertas” (meses con venta y recency)
 - Evidencia para justificar lags y variables de “estado” de la serie
 
-### Notebook 2 — `02_feature_engineering_intermediate.ipynb`
+### Notebook 2 — `featureengineering.ipynb`
 Tratamiento y feature engineering + guardado de base intermedia:
 - Tratamiento mínimo de valores especiales (precios inválidos y outliers extremos)
 - Agregación mensual del target (`item_cnt_month`) y clipping a [0, 20]
@@ -37,7 +37,7 @@ Salida en `intermediate_data/`:
 - `test_pairs.parquet` (shop_id, item_id)
 - `meta.json` (lista de features y configuración)
 
-### Notebook 3 — `03_modelo_final_hurdle.ipynb`
+### Notebook 3 — `modeling.ipynb`
 Modelación y submission:
 - Carga de `intermediate_data/`
 - Modelo final en dos etapas (hurdle):
@@ -46,7 +46,7 @@ Modelación y submission:
 - Predicción final y `submission.csv`
 - Guardado del modelo en `model_tarea1.pkl`
 
-### Notebook 4 — `04_evaluacion_comparacion_simulacion.ipynb`
+### Notebook 4 — `simulationcomparation.ipynb`
 Evaluación y lectura operativa:
 - Calibración por deciles, residuales y análisis de cola (y≥5/10/15)
 - Comparación contra un baseline simple (solo regresión)
