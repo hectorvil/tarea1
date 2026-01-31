@@ -1,4 +1,4 @@
-# Pronóstico de demanda mensual (producto–tienda) con LightGBM
+# Pronóstico de demanda mensual con LightGBM
 
 Este repositorio contiene un pipeline completo para pronosticar la **demanda mensual** de productos por tienda usando el dataset de 1C Company (Kaggle: *Predict Future Sales*). El objetivo es apoyar decisiones de inventario: **cuánto pedir y dónde colocarlo con anticipación**, buscando reducir sobrestock (inventario inmovilizado) y disminuir quiebres de stock (ventas perdidas), además de acelerar un proceso que suele depender de promedios móviles y ajustes manuales.
 
