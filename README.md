@@ -4,9 +4,9 @@ Este repositorio contiene un pipeline completo para pronosticar la **demanda men
 
 El enfoque principal utiliza un modelo en **dos etapas**: primero estima si habrá venta (clasificación) y después estima cuántas unidades se venderán (regresión). Esto es especialmente útil cuando la demanda es **esporádica e intermitente**, con muchos ceros.
 
-## Resultados (alto nivel)
+## Resultados 
 - Se cumple la meta de error agregada: el modelo alcanza **RMSE ≈ 1** (menor al umbral de 5 unidades).
-- Aun así, el análisis por segmentos muestra que el modelo puede **subestimar picos de demanda**, que son pocos pero de alto impacto (posibles productos críticos o temporadas pico). Por ello, se recomienda complementar con criterio de negocio y/o ajustes de inventario de seguridad.
+- Aun así, el análisis por segmentos muestra que el modelo puede **subestimar picos de demanda**, que son pocos pero podrían ser de alto impacto. Por ello, se recomienda complementar con criterio de negocio.
 
 ---
 
